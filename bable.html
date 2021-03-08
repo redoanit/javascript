@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My list</h1>
+    <div id="container">
+        <ul id="mylist">
+            <li id="fastid" class="item">Lorem ipsum dolor sit amet.</li>
+            <li class="item">Veritatis quidem quisquam eum vero.</li>
+            <li class="item">Inventore recusandae maxime facere odit?</li>
+            <li class="item">Aliquam error obcaecati repellendus numquam!</li>
+            <li class="item">Iusto provident velit reiciendis nihil!</li>
+        </ul>
+    </div>
+
+    <script>
+
+        var items = document.getElementsByClassName('item');
+        for (let i = 0; i < items.length; i++) {
+            const item = items[i];
+            item.addEventListener('click', function(event){
+                console.log(this);
+            })
+        }
+        // document.getElementById('fastid').addEventListener('click', function (vent){
+        //     console.log('first evarent');
+        //     event.stopPropagation();
+        // })
+        // document.getElementById('container').addEventListener('click', function (event){
+        //     console.log('container click');
+        // })
+        // document.getElementById('mylist').addEventListener('click', function(){
+        //     console.log('ul click my list');
+        // })
+    </script>
+</body>
+</html>

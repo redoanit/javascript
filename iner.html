@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article{border: 2px solid tomato;
+                margin: 10px;
+                padding: auto;}
+    </style>
+</head>
+<body>
+   
+    <article>
+        <h3>artile-1</h3>
+        <p class="author">autor-1</p>
+        <p class="description">Lorem, ipsum dolor.</p>
+    </article>
+    <article>
+        <h3>artile-2</h3>
+        <p class="author">autor-2</p>
+        <p class="description">Autem, laudantium mollitia.</p>
+    </article>
+    <article>
+        <h3>artile-3</h3>
+        <p class="author">autor-3</p>
+        <p class="description">Temporibus, laborum culpa!</p>
+    </article>
+    
+
+
+    <SCript>
+        var author =document.getElementsByClassName('author')
+        for (let i = 0; i < author.length; i++) {
+            const element = author[i];
+            console.log(element)
+            element.innerHTML='redu'+i;
+            element.style.color='red'
+            element.style.backgroundColor= 'green'
+        }
+    </SCript>
+</body>
+</html>
